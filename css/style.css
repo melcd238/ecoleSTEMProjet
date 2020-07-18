@@ -1,0 +1,311 @@
+@charset "UTF-8";
+/*font-family: 'Rokkitt', serif;*/
+body,html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Rokkitt', serif; /*tout le body avec la même police*/
+}
+.sections{
+  padding: 30px 0;
+}
+.container-fluid{
+  padding: 0;
+
+}
+.section-header .section-title{
+  font-size: 40px;
+}
+.section-header .line {
+  width: 200px;
+  background: #ddd;
+  height: 4px;
+  margin: auto;
+}
+.section-header .line span {
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color:#458073;
+  margin: auto;
+  position: relative;
+  bottom: 1px;
+}
+.section-header p{
+  width: 50%;
+  color: #888;
+  margin: 10px auto;
+  line-height: 1.5;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.3);
+}
+.fleche {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  }
+  .fleche .icone {
+  background: #458073;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 50%;
+
+}
+
+
+/* ------------------ Header-------------------*/
+header {
+  background-color: #458073;
+  padding: 10px 0;
+  height: auto;
+  border-bottom: 2px solid #6B807B;
+  position: relative;
+}
+header .logo h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+header nav .nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+
+}
+header nav .nav-list .list a {
+  display: block;
+  padding: 10px;
+  margin: 9px 0;
+  color: #fff;
+  text-decoration: none;
+}
+header nav .nav-list .list a:hover{
+    color: #8AFFE6;
+}
+header i.icon{
+  position: absolute;
+  right: 20px;
+  top: 32px;
+  z-index: 10;
+  color: #fff;
+  display: none;
+}
+/*--------------------------End of Header--------------------------*/
+/*-------------------------Banner ---------------------------------*/
+.home{
+  height: 500px;
+  background-image: url(../img/ban.jpg);
+  background-size: cover;
+  background-position: center;
+  position:relative;
+}
+.home .home-content{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.home .home-title {
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 20px #000;
+}
+.home .home-desc{
+  color: #fff;
+  font-size: 25px;
+  text-shadow: 1px 1px 20px #000;
+}
+.home .button{
+  color:#fff;
+  background-color: #458073;
+  text-align: center;
+  width: 150px;
+}
+.home .button:hover{
+  background-color: #8AFFE6;
+}
+/* Bienvenue*/
+.bienvenue .bienvenue-info h3{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.bienvenue .bienvenue-info .bienvenue-info-desc{
+  line-height: 1.8;
+  color:#888;
+}
+.bienvenue .bienvenue-video{
+  margin-bottom:40px;
+}
+
+/*fin de Bienvenue*/
+
+/* Actualites*/
+.actualites{
+  background: #f7f7f7;
+}
+.actualites .actu{
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #458073;
+}
+.actualites .actu .icon{
+  background: #458073;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+  border-radius: 50%;
+
+}
+/*------------------------inscription-------------------------------*/
+.inscription{
+  background: #f7f7f7;
+}
+.inscription .ins{
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.inscription .ins .ins-desc{
+  line-height: 1.8;
+}
+/*--------------------------fin inscription---------------------------*/
+/*--------------------------infos pratiques---------------------------*/
+
+.infospratiques .infp{
+  background: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+    box-shadow: 5px 5px 5px #458073;
+}
+ .infospratiques .infp .icon{
+  background: #458073;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+  border-radius: 50%;
+
+}
+
+/*---------------------------Portefolio-------------------------------*/
+
+.portefolio{
+  background: #f7f7f7;
+}
+#carousel-portefolio{
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.item img {
+  width: 100%;
+  height: auto;
+}
+#carousel-portefolio .item .carousel-caption{
+  margin-bottom: 20px;
+}
+
+/*------------------------- associations------------------------------*/
+.associations .asso-info{
+  padding: 20px;
+  text-align: center;
+}
+.associations .asso-info .asso-info-desc{
+  line-height: 1.8;
+}
+/*-------------------------fin  associations------------------------------*/
+
+/*------------------------- pastorale------------------------------*/
+.pastorale{
+  background: #f7f7f7;
+}
+.pastorale .past-info{
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.pastorale .past-info .past-info-desc{
+  line-height: 1.8;
+}
+.pastorale .past-info .past-info-desc a{
+  color: #000;
+}
+.pastorale .past-info .past-info-desc a:hover{
+  text-decoration: none;
+  color:#8AFFE6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------footer-----------------------------------------*/
+footer{
+  background-color: #458073;
+  color: #fff;
+}
+/*------------------------------info.html----------------------------*/
+.enCeMoment{
+  background-color: #f7f7f7;
+}
+
+
+/*-------------------------Média Queries----------------------------*/
+@media (max-width:575px) {
+   header nav .nav-list{
+     display: none;
+     text-align: center;
+     padding: 0;
+   }
+   header .logo{
+     text-align: center;
+   }
+
+   header i.icon{
+      display: block;
+   }
+   .home .home-title {
+      font-size: 30px;
+
+   }
+   .home .home-desc{
+      font-size: 20px;
+
+}
+   .fleche{
+     display: none;
+   }
+}
